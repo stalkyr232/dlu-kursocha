@@ -1,0 +1,269 @@
+###############################################################################
+#
+# IAR ELF Linker V9.30.1.335/W64 for ARM                  19/May/2023  16:01:35
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Exe\kurs.out
+#    Map file     =
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\List\kurs.map
+#    Command line =
+#        -f F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Exe\kurs.out.rsp
+#        (F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\croutine.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\event_groups.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\list.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\main.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\portable\IAR\ARM_CM4F\port.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portasm.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\queue.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\StartUp.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\tasks.o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\timers.o
+#        --no_out_extension -o
+#        F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Exe\kurs.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\List\kurs.map
+#        --config A:\Program\IAR\arm/config/linker/ST/stm32f411xE.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale
+#        --cpu=Cortex-M4 --fpu=VFPv4_sp)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = Disabled
+__CPP_Language   = C++14
+__CPP_Library    = libc++
+__CPP_Runtime    = 1
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+
+  Section          Kind         Address    Size  Object
+  -------          ----         -------    ----  ------
+"A0":                                     0x11c
+  .intvec          const     0x800'0000   0x11c  StartUp.o [1]
+                           - 0x800'011c   0x11c
+
+"P1":                                     0x3c0
+  .text            ro code   0x800'011c   0x194  tasks.o [2]
+  .text            ro code   0x800'02b0    0x3e  list.o [2]
+  .text            ro code   0x800'02ee     0x2  StartUp.o [1]
+  CODE             ro code   0x800'02f0    0xa8  portasm.o [3]
+  .text            ro code   0x800'0398    0x38  zero_init3.o [6]
+  .text            ro code   0x800'03d0    0x30  port.o [3]
+  .text            ro code   0x800'0400    0x28  data_init.o [6]
+  .text            ro code   0x800'0428    0x22  fpinit_M.o [5]
+  .iar.init_table  const     0x800'044c    0x10  - Linker created -
+  .rodata          const     0x800'045c     0x1  unwind_debug.o [7]
+  .text            ro code   0x800'0460    0x1e  cmain.o [6]
+  .text            ro code   0x800'047e     0x4  low_level_init.o [4]
+  .text            ro code   0x800'0482     0x4  main.o [1]
+  .text            ro code   0x800'0486     0x4  exit.o [4]
+  .text            ro code   0x800'048c     0xa  cexit.o [6]
+  .text            ro code   0x800'0498    0x14  exit.o [7]
+  .text            ro code   0x800'04ac    0x10  StartUp.o [1]
+  .text            ro code   0x800'04bc     0x8  StartUp.o [1]
+  .text            ro code   0x800'04c4     0x8  StartUp.o [1]
+  .text            ro code   0x800'04cc     0x8  StartUp.o [1]
+  .text            ro code   0x800'04d4     0x8  StartUp.o [1]
+  .rodata          const     0x800'04dc     0x0  zero_init3.o [6]
+                           - 0x800'04dc   0x3c0
+
+"P2", part 1 of 2:                         0x8c
+  .bss             zero     0x2000'0000    0x64  tasks.o [2]
+  .bss             zero     0x2000'0064     0x4  tasks.o [2]
+  .bss             zero     0x2000'0068     0x4  tasks.o [2]
+  .bss             zero     0x2000'006c     0x4  tasks.o [2]
+  .bss             zero     0x2000'0070     0x4  tasks.o [2]
+  .bss             zero     0x2000'0074     0x4  tasks.o [2]
+  .bss             zero     0x2000'0078     0x4  tasks.o [2]
+  .bss             zero     0x2000'007c     0x4  tasks.o [2]
+  .bss             zero     0x2000'0080     0x4  tasks.o [2]
+  .bss             zero     0x2000'0084     0x4  tasks.o [2]
+  .bss             zero     0x2000'0088     0x4  tasks.o [2]
+                          - 0x2000'008c    0x8c
+
+"P2", part 2 of 2:                       0x2000
+  CSTACK                    0x2000'0090  0x2000  <Block>
+    CSTACK         uninit   0x2000'0090  0x2000  <Block tail>
+                          - 0x2000'2090  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'04dc   0x807'ffff  0x7'fb24
+  0x2000'008c  0x2000'008f       0x4
+  0x2000'2090  0x2001'ffff  0x1'df70
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x8c:
+          0x2000'0000  0x8c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj: [1]
+    StartUp.o              50      284
+    main.o                  4
+    -------------------------------------------
+    Total:                 54      284
+
+F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos: [2]
+    list.o                 62
+    tasks.o               404               140
+    -------------------------------------------
+    Total:                466               140
+
+F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\portable\IAR\ARM_CM4F: [3]
+    port.o                 48
+    portasm.o             168
+    -------------------------------------------
+    Total:                216
+
+dl7M_tlf.a: [4]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+m7M_tls.a: [5]
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
+
+rt7M_tl.a: [6]
+    cexit.o                10
+    cmain.o                30
+    data_init.o            40
+    zero_init3.o           56
+    -------------------------------------------
+    Total:                136
+
+shb_l.a: [7]
+    exit.o                 20
+    unwind_debug.o                   1
+    -------------------------------------------
+    Total:                 20        1
+
+    Gaps                    7        2
+    Linker created                  16    8'192
+-----------------------------------------------
+    Grand Total:          941      303    8'332
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'044c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'045c          --   Gb  - Linker created -
+?main                    0x800'0461         Code  Gb  cmain.o [6]
+CSTACK$$Base            0x2000'0090          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2090          --   Gb  - Linker created -
+InterruptHandler::DummyHandler()
+                         0x800'02ef    0x2  Code  Wk  StartUp.o [1]
+OsWrapper::Rtos::HandleSvcInterrupt()
+                         0x800'04cd    0x8  Code  Wk  StartUp.o [1]
+OsWrapper::Rtos::HandleSysTickInterrupt()
+                         0x800'04d5    0x8  Code  Wk  StartUp.o [1]
+OsWrapper::RtosWrapper::wHandleSvcInterrupt()
+                         0x800'04bd    0x8  Code  Wk  StartUp.o [1]
+OsWrapper::RtosWrapper::wHandleSysTickInterrupt()
+                         0x800'04c5    0x8  Code  Wk  StartUp.o [1]
+Region$$Table$$Base      0x800'044c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'045c          --   Gb  - Linker created -
+__cmain                  0x800'0461         Code  Gb  cmain.o [6]
+__exit                   0x800'0499   0x14  Code  Gb  exit.o [7]
+__iar_data_init3         0x800'0401   0x28  Code  Gb  data_init.o [6]
+__iar_debug_exceptions   0x800'045c    0x1  Data  Gb  unwind_debug.o [7]
+__iar_init_vfp           0x800'0429         Code  Gb  fpinit_M.o [5]
+__iar_program_start      0x800'04ad   0x10  Code  Gb  StartUp.o [1]
+__iar_zero_init3         0x800'0399   0x38  Code  Gb  zero_init3.o [6]
+__low_level_init         0x800'047f    0x4  Code  Gb  low_level_init.o [4]
+__vector_table           0x800'0000  0x11c  Data  Lc  StartUp.o [1]
+_call_main               0x800'046d         Code  Gb  cmain.o [6]
+_exit                    0x800'048d         Code  Gb  cexit.o [6]
+exit                     0x800'0487    0x4  Code  Gb  exit.o [4]
+main                     0x800'0483    0x4  Code  Gb  main.o [1]
+prvResetNextTaskUnblockTime
+                         0x800'025b   0x28  Code  Lc  tasks.o [2]
+pxCurrentTCB            0x2000'0064    0x4  Data  Gb  tasks.o [2]
+pxDelayedTaskList       0x2000'0068    0x4  Data  Lc  tasks.o [2]
+pxOverflowDelayedTaskList
+                        0x2000'006c    0x4  Data  Lc  tasks.o [2]
+pxReadyTasksLists       0x2000'0000   0x64  Data  Lc  tasks.o [2]
+uxListRemove             0x800'02c9   0x26  Code  Gb  list.o [2]
+uxPendedTicks           0x2000'0078    0x4  Data  Lc  tasks.o [2]
+uxSchedulerSuspended    0x2000'0088    0x4  Data  Lc  tasks.o [2]
+uxTopReadyPriority      0x2000'0074    0x4  Data  Lc  tasks.o [2]
+vListInsertEnd           0x800'02b1   0x18  Code  Gb  list.o [2]
+vPortEnableVFP           0x800'037d         Code  Gb  portasm.o [3]
+vPortSVCHandler          0x800'0349         Code  Gb  portasm.o [3]
+vPortStartFirstTask      0x800'0365         Code  Gb  portasm.o [3]
+vTaskSwitchContext       0x800'0203   0x58  Code  Gb  tasks.o [2]
+xNextTaskUnblockTime    0x2000'0084    0x4  Data  Lc  tasks.o [2]
+xNumOfOverflows         0x2000'0080    0x4  Data  Lc  tasks.o [2]
+xPortPendSVHandler       0x800'02f1         Code  Gb  portasm.o [3]
+xPortSysTickHandler      0x800'03d1   0x28  Code  Gb  port.o [3]
+xTaskIncrementTick       0x800'011d   0xe6  Code  Gb  tasks.o [2]
+xTickCount              0x2000'0070    0x4  Data  Lc  tasks.o [2]
+xYieldPending           0x2000'007c    0x4  Data  Lc  tasks.o [2]
+
+
+[1] = F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj
+[2] = F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos
+[3] = F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Obj\Rtos\FreeRtos\portable\IAR\ARM_CM4F
+[4] = dl7M_tlf.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+    941 bytes of readonly  code memory
+    303 bytes of readonly  data memory
+  8'332 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,30 @@
+F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\BrowseInfo\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portasm.pbi: \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portasm.c \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\FreeRTOSConfig.h \
+  A:\Program\IAR\arm\inc\c\stdint.h A:\Program\IAR\arm\inc\c\ycheck.h \
+  A:\Program\IAR\arm\inc\c\yvals.h \
+  A:\Program\IAR\arm\inc\c\DLib_Defaults.h \
+  A:\Program\IAR\arm\inc\c\DLib_Config_Full.h \
+  A:\Program\IAR\arm\inc\c\DLib_Product.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\mpu_wrappers.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\tasks.c \
+  A:\Program\IAR\arm\inc\c\stdlib.h A:\Program\IAR\arm\inc\c\ysizet.h \
+  A:\Program\IAR\arm\inc\c\DLib_Product_stdlib.h \
+  A:\Program\IAR\arm\inc\c\string.h \
+  A:\Program\IAR\arm\inc\c\DLib_Product_string.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\FreeRTOS.h \
+  A:\Program\IAR\arm\inc\c\stddef.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\..\FreeRTOSConfig.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\projdefs.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\portable.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\deprecated_definitions.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\portable\IAR\ARM_CM4F\portmacro.h \
+  A:\Program\IAR\arm\inc\c\aarch32\intrinsics.h \
+  A:\Program\IAR\arm\inc\c\aarch32\iccarm_builtin.h \
+  A:\Program\IAR\arm\inc\c\aarch32\iar_intrinsics_common.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\mpu_wrappers.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\task.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\list.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\timers.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\task.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\include\StackMacros.h

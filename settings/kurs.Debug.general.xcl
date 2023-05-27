@@ -1,0 +1,15 @@
+"A:\Program\IAR\arm\bin\armPROC.dll" 
+
+"A:\Program\IAR\arm\bin\armSTLINK.dll" 
+
+"F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\Exe\kurs.out" 
+
+--plugin="A:\Program\IAR\arm\bin\armbat.dll" 
+
+--device_macro="A:\Program\IAR\arm/config/debugger/ST/STM32F4xx.dmac" 
+
+--flash_loader="A:\Program\IAR\arm/config/flashloader/ST/FlashSTM32F411xE.board" 
+
+
+
+
