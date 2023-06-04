@@ -247,13 +247,8 @@ F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\BrowseInfo\main.pbi: \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\accessmode.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\adc1registers.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\adc1fieldvalues.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\adccommonregisters.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\adccommonfieldvalues.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\tim3registers.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\tim3fieldvalues.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\CortexM4\nvicregisters.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\CortexM4\FieldValues\nvicfieldvalues.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\InterruptHandler\interrupthandler.hpp \
   A:\Program\IAR\arm\inc\libcpp\iostream \
   A:\Program\IAR\arm\inc\libcpp\ios \
   A:\Program\IAR\arm\inc\libcpp\__locale \
@@ -298,10 +293,17 @@ F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\BrowseInfo\main.pbi: \
   A:\Program\IAR\arm\inc\libcpp\__bsd_locale_defaults.h \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\gpioaregisters.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\gpioafieldvalues.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\gpiobregisters.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\gpiobfieldvalues.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Hardware\ADC\ADC.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\gpiocregisters.hpp \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\gpiocfieldvalues.hpp \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Applications\Parameters\IMeasureParameter.h \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Applications\IDataSource.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Hardware\ADC\ADC.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Applications\Parameters\Voltage.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Applications\Parameters\Frequency.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Applications\Parameters\Filter.h \
+  A:\Program\IAR\arm\inc\libcpp\cmath \
+  A:\Program\IAR\arm\inc\libcpp\math.h A:\Program\IAR\arm\inc\c\math.h \
+  A:\Program\IAR\arm\inc\c\DLib_float_setup.h \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\rtos.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\thread.hpp \
   A:\Program\IAR\arm\inc\libcpp\array \
@@ -328,4 +330,6 @@ F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Debug\BrowseInfo\main.pbi: \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\FreeRtos\FreeRTOSConfig.h \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\FreeRtos\rtoswrapper.hpp \
   F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\FreeRtos\rtosdefs.hpp \
-  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\eventmode.hpp
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\eventmode.hpp \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Thread\Generator_Task.h \
+  F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Rtos\wrapper\Thread.hpp

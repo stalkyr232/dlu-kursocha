@@ -3,16 +3,17 @@
 
 #include "Thread.hpp"
 #include "IMeasureParameter.h"
+#include "IDataSource.h"
 
-class TemperatureTask: public OsWrapper::Thread<512> 
+class GeneratorTask: public OsWrapper::Thread<512> 
 {
  public:
 
-  TemperatureTask(IMeasureParameter& parameter); 
+  GeneratorTask(IDataSource& freq); 
   void Execute() override; 
-    
+
 private: // приватный атрибут, который хранит ссылку на интерфейс (его инициализация находится в TemperatureTask.cpp)
-   IMeasureParameter& _parameter;   
+   IDataSource& _freq;
 };
 
 #endif

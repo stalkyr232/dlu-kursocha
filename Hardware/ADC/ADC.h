@@ -2,17 +2,18 @@
 #define ADC_H
 
 #include <cstdint>
-#include "IDataSource.h"  
+#include "IDataSource.h"
 
+// Класс, который получает значение с АЦП
 class ADC: public IDataSource
 {
 public:
   ADC();
   float GetData() override;
   void Start();
-  
+
 private:
-  std::uint32_t code;
+    volatile const std::uint32_t code;
 
 };
 

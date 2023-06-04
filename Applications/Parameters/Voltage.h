@@ -1,22 +1,23 @@
-#ifndef TEMPERATURE_H
-#define TEMPERATURE_H
+#ifndef VOLTAGE_H
+#define VOLTAGE_H
 
-#include "IMeasureParameter.h" // для IMeasureParameter
-#include "IDataSource.h"       // для IDataSource
+#include "IDataSource.h"       // ??? IDataSource
 
-class Temperature: public IMeasureParameter
+class Voltage: public IDataSource
 {
 public: 
-  explicit Temperature(IDataSource& resistor);  
-  float Calculate() override;
+  explicit Voltage(IDataSource& code): _code(code) 
+{
 
-  
+} 
+  float GetData() override
+  {
+    float voltage =  _code.GetData() * 3.3f / 4096.0f; // 
+    return voltage;
+  }
+
 private:
-  // Градуировочные характеристики
-  static constexpr float At = -246.584F;  
-  static constexpr float Bt = 2.37383F;
-  static constexpr float Ct = 0.000921853F;  
-  IDataSource& _resistor;
+   IDataSource& _code;
 };
 
 #endif

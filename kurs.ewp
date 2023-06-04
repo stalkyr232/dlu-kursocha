@@ -2179,19 +2179,13 @@
         <group>
             <name>Parameters</name>
             <file>
-                <name>$PROJ_DIR$\Applications\Parameters\filtere.cpp</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\Applications\Parameters\filtere.h</name>
+                <name>$PROJ_DIR$\Applications\Parameters\Filter.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Applications\Parameters\Frequency.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Applications\Parameters\IMeasureParameter.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\Applications\Parameters\Voltage.cpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Applications\Parameters\Voltage.h</name>
@@ -2358,12 +2352,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\Thread\Generator_Task.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Thread\Voltage_Task.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Thread\Voltage_Task.h</name>
         </file>
     </group>
     <file>

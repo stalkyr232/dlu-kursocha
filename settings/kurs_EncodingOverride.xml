@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <userOverrides>
     <override>
+        <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Applications\Parameters\Frequency.h</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Hardware\ADC\ADC.cpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Hardware\ADC\ADC.h</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Hardware\DMA\DMA.h</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Thread\Generator_Task.cpp</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
+        <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\Thread\Generator_Task.h</path>
+        <encoding>Win-1251</encoding>
+    </override>
+    <override>
         <path>F:\Github\Kolodiy\KURS_RABOTA\dlu-kursocha\main.cpp</path>
         <encoding>Win-1251</encoding>
     </override>
